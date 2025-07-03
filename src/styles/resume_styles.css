@@ -1,1 +1,101 @@
-/* src/styles/resume_styles
+/* mp-1/src/styles/resume_styles.css */
+/* Last Updated by Zhixin Li(lzhx@bu.edu) */
+/* Stylesheet for Online Resume mp-1. */
+
+* {
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    font-family: "Times New Roman", Times, serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+.container {
+    display: flex;
+}
+
+nav{
+    display: block;
+    margin: 30px;
+    max-width: 30%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav li{
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+
+}
+
+header{
+    display: block;
+    margin: 30px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 2px solid lightgray;
+}
+
+main{
+    display: block;
+    margin: 10px 30px;
+    max-width: 70%;
+}
+
+footer{
+    display: block;
+    margin: 30px;
+    width: 100%;
+    text-align: left;
+    border-top: 2px solid lightgray;
+}
+
+h1,h2,h3,h4,h5, p{
+    margin: 10px;
+}
+
+img{
+    max-width: 80%;
+}
+
+@media screen and (max-width: 1000px){
+    div{
+        font-size: calc(8px + 1vw);
+    }
+
+    main{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .container{
+        display: block;
+    }
+
+    nav{
+        text-align: center;
+        max-width: 100%;
+        padding: 15px 0;
+        border-bottom: 2px solid lightgray;
+    }
+
+    nav li{
+        display: inline;
+    }
+
+    header{
+        text-align: center;
+        margin: 10px auto;
+        border: 2px solid lightgray;
+    }
+
+}
