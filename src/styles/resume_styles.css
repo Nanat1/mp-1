@@ -46,7 +46,7 @@ header{
     margin: 30px;
     width: 100%;
     text-align: left;
-    border-bottom: 2px solid #07e191;
+    border-bottom: 2px solid lightgray;
 }
 
 main{
@@ -117,7 +117,7 @@ strong {
         text-align: center;
         max-width: 100%;
         padding: 15px 0;
-        border-bottom: 2px solid #07e191;
+        border-bottom: 2px solid lightgray;
     }
 
     nav li{
@@ -127,7 +127,7 @@ strong {
     header{
         text-align: center;
         margin: 10px auto;
-        border: 2px solid #07e191;
+        border: 1px solid #07e191;
     }
 
 }
