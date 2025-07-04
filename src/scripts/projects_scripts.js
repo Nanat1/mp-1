@@ -6,7 +6,12 @@ function Addition(){
     y = Number(y);
 
     let result = x + y;
-    document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    if( result < 0 ){
+        document.getElementById("output").innerHTML = `<p class="nagative_number"> ${result} </p>`;
+    } else {
+        document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    }
+
     document.getElementById("calc_sign").innerHTML = "+";
 }
 
@@ -18,7 +23,12 @@ function Subtraction(){
     y = Number(y);
 
     let result = x - y;
-    document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    if( result < 0 ){
+        document.getElementById("output").innerHTML = `<p class="nagative_number"> ${result} </p>`;
+    } else {
+        document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    }
+
     document.getElementById("calc_sign").innerHTML = "-";
 }
 
@@ -30,7 +40,12 @@ function Multiplication(){
     y = Number(y);
 
     let result = x * y;
-    document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    if( result < 0 ){
+        document.getElementById("output").innerHTML = `<p class="nagative_number"> ${result} </p>`;
+    } else {
+        document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    }
+
     document.getElementById("calc_sign").innerHTML = "×";
 }
 
@@ -42,7 +57,12 @@ function Division(){
     y = Number(y);
 
     let result = x / y;
-    document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    if( result < 0 ){
+        document.getElementById("output").innerHTML = `<p class="nagative_number"> ${result} </p>`;
+    } else {
+        document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    }
+
     document.getElementById("calc_sign").innerHTML = "÷";
 }
 
@@ -53,8 +73,16 @@ function Power(){
     let y = document.getElementById("y").value;
     y = Number(y);
 
-    let result = x ** y;
-    document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    let result = 1;
+    for (let i = 0; i < y; i++) {
+        result = result * x;
+    }
+    if( result < 0 ){
+        document.getElementById("output").innerHTML = `<p class="nagative_number"> ${result} </p>`;
+    } else {
+        document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    }
+
     document.getElementById("calc_sign").innerHTML = "**(x<sup>y</sup>)";
 }
 

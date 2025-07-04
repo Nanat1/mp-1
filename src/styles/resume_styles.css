@@ -80,6 +80,10 @@ img{
     padding: 5px;
 }
 
+.nagative_number {
+    color: red;
+}
+
 button {
     background-color: #07e191; /* Green */
     border: none;
