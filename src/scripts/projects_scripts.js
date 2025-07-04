@@ -7,6 +7,7 @@ function Addition(){
 
     let result = x + y;
     document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    document.getElementById("calc_sign").innerHTML = "+";
 }
 
 function Subtraction(){
@@ -18,6 +19,7 @@ function Subtraction(){
 
     let result = x - y;
     document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    document.getElementById("calc_sign").innerHTML = "-";
 }
 
 function Multiplication(){
@@ -29,6 +31,7 @@ function Multiplication(){
 
     let result = x * y;
     document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    document.getElementById("calc_sign").innerHTML = "×";
 }
 
 function Division(){
@@ -40,6 +43,7 @@ function Division(){
 
     let result = x / y;
     document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    document.getElementById("calc_sign").innerHTML = "÷";
 }
 
 function Power(){
@@ -51,10 +55,12 @@ function Power(){
 
     let result = x ** y;
     document.getElementById("output").innerHTML = `<p> ${result} </p>`;
+    document.getElementById("calc_sign").innerHTML = "**(x<sup>y</sup>)";
 }
 
 function Clear(){
     document.getElementById("x").value = "";
     document.getElementById("y").value = "";
     document.getElementById("output").innerHTML = "";
+    document.getElementById("calc_sign").innerHTML = "";
 }
